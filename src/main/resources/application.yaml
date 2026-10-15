@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: tic-tac-toe-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tictactoe
+    username: tictactoe
+    password: tictactoe
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
